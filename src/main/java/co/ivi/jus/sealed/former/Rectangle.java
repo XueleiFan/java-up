@@ -6,8 +6,8 @@
 package co.ivi.jus.sealed.former;
 
 public class Rectangle extends Shape {
-    final double length;
-    final double width;
+    public final double length;
+    public final double width;
 
     public Rectangle(String id, double length, double width) {
         super(id);

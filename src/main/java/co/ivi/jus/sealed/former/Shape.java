@@ -6,7 +6,7 @@
 package co.ivi.jus.sealed.former;
 
 public abstract class Shape {
-    final String id;
+    public final String id;
 
     public Shape(String id) {
         this.id = id;

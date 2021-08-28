@@ -6,7 +6,7 @@
 package co.ivi.jus.sealed.modern;
 
 public abstract sealed class Shape permits Circle, Rectangle, Square {
-    final String id;
+    public final String id;
 
     public Shape(String id) {
         this.id = id;

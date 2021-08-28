@@ -7,7 +7,7 @@ package co.ivi.jus.sealed.propagate;
 
 public abstract sealed class Shape {
 //        permits Shape.Circle, Shape.Rectangle, Shape.Square {
-    final String id;
+    public final String id;
 
     public Shape(String id) {
         this.id = id;
@@ -16,7 +16,7 @@ public abstract sealed class Shape {
     public abstract double area();
 
     public static non-sealed class Circle extends Shape {
-        final double radius;
+        public final double radius;
 
         public Circle(String id, double radius) {
             super(id);
@@ -30,8 +30,8 @@ public abstract sealed class Shape {
     }
 
     public static final class Rectangle extends Shape {
-        final double length;
-        final double width;
+        public final double length;
+        public final double width;
 
         public Rectangle(String id, double length, double width) {
             super(id);
@@ -46,7 +46,7 @@ public abstract sealed class Shape {
     }
 
     public static sealed class Square extends Shape {
-        final double side;
+        public final double side;
 
         public Square(String id, double side) {
             super(id);
@@ -60,7 +60,7 @@ public abstract sealed class Shape {
     }
 
     public static final class ColoredSquare extends Square {
-        final int rgb;
+        public final int rgb;
 
         public ColoredSquare(String id, double side, int rgb) {
             super(id, side);
@@ -69,7 +69,7 @@ public abstract sealed class Shape {
     }
 
     public static class ColoredCircle extends Circle {
-        final int rgb;
+        public final int rgb;
 
         public ColoredCircle(String id, double radius, int rgb) {
             super(id, radius);

@@ -6,7 +6,7 @@
 package co.ivi.jus.sealed.former;
 
 public class Circle extends Shape {
-    final double radius;
+    public final double radius;
 
     public Circle(String id, double radius) {
         super(id);

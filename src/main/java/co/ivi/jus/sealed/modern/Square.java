@@ -6,7 +6,7 @@
 package co.ivi.jus.sealed.modern;
 
 public final class Square extends Shape {
-    final double side;
+    public final double side;
 
     public Square(String id, double side) {
         super(id);

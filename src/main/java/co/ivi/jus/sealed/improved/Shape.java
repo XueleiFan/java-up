@@ -7,7 +7,7 @@ package co.ivi.jus.sealed.improved;
 
     public abstract sealed class Shape {
 //        permits Shape.Circle, Shape.Rectangle, Shape.Square {
-    final String id;
+    public final String id;
 
     public Shape(String id) {
         this.id = id;
@@ -16,7 +16,7 @@ package co.ivi.jus.sealed.improved;
     public abstract double area();
 
     public static final class Circle extends Shape {
-        final double radius;
+        public final double radius;
 
         public Circle(String id, double radius) {
             super(id);
@@ -30,8 +30,8 @@ package co.ivi.jus.sealed.improved;
     }
 
     public static final class Rectangle extends Shape {
-        final double length;
-        final double width;
+        public final double length;
+        public final double width;
 
         public Rectangle(String id, double length, double width) {
             super(id);
@@ -46,7 +46,7 @@ package co.ivi.jus.sealed.improved;
     }
 
     public static final class Square extends Shape {
-        final double side;
+        public final double side;
 
         public Square(String id, double side) {
             super(id);
