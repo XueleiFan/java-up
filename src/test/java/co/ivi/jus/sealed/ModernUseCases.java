@@ -3,16 +3,21 @@
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  */
 
-package co.ivi.jus.sealed.modern;
+package co.ivi.jus.sealed;
 
-public class ShapeUseCases {
+import co.ivi.jus.sealed.modern.Circle;
+import co.ivi.jus.sealed.modern.Rectangle;
+import co.ivi.jus.sealed.modern.Shape;
+import co.ivi.jus.sealed.modern.Square;
+
+public class ModernUseCases {
     public static void main(String[] args) {
         System.out.println("Is it a circle? " +
-                ShapeUseCases.isSquare(null));
+                ModernUseCases.isSquare(null));
         System.out.println("Is it a square? " +
-                ShapeUseCases.isSquare(null));
+                ModernUseCases.isSquare(null));
         System.out.println("Is it a square? " +
-                ShapeUseCases.isSquare(new Square("circle", 3)));
+                ModernUseCases.isSquare(new Square("circle", 3)));
     }
 
     public static boolean isCircle(Shape shape) {

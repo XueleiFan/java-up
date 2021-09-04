@@ -3,9 +3,14 @@
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  */
 
-package co.ivi.jus.sealed.former;
+package co.ivi.jus.sealed;
 
-public class ShapeUseCases {
+import co.ivi.jus.sealed.former.Circle;
+import co.ivi.jus.sealed.former.Rectangle;
+import co.ivi.jus.sealed.former.Shape;
+import co.ivi.jus.sealed.former.Square;
+
+public class FormerUseCases {
     public static boolean isCircle(Shape shape) {
        return (shape instanceof Circle);
     }
