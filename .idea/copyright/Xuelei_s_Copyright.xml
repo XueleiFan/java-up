@@ -1,0 +1,6 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="Copyright (c) &amp;#36;originalComment.match(&quot;Copyright \(c\) (\d+)&quot;, 1, &quot;-&quot;)&amp;#36;today.year, Xuelei Fan. All rights reserved.&#10;DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER." />
+    <option name="myName" value="Xuelei's Copyright" />
+  </copyright>
+</component>

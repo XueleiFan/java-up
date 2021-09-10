@@ -19,6 +19,10 @@ public record Circle(double radius) implements Shape {
 
     @Override
     public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+
         if (o instanceof Circle other) {
             return other.radius == this.radius;
         }
