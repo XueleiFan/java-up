@@ -26,9 +26,9 @@ public class TextBlocks {
                 """;
         System.out.println("Here is the text block:\n" + textBlock);
 
-        System.out.println("Is the text block equals to the regular string? " +
+        System.out.println("Does the text block equal to the regular string? " +
                 stringBlock.equals(textBlock));
-        System.out.println("Is the text block refers to the regular string? " +
+        System.out.println("Does the text block refer to the regular string? " +
                 (stringBlock == textBlock));
 
         textBlock = """
@@ -40,9 +40,9 @@ public class TextBlocks {
                 </html>
                 """;
         System.out.println("Here is the text block:\n" + textBlock);
-        System.out.println("Is the text block equals to the regular string? " +
+        System.out.println("Does the text block equal to the regular string? " +
                 stringBlock.equals(textBlock));
-        System.out.println("Is the text block refers to the regular string? " +
+        System.out.println("Does the text block refer to the regular string? " +
                 (stringBlock == textBlock));
     }
 }
