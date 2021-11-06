@@ -3,7 +3,7 @@
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  */
 
-package co.ivi.jus.error.former;
+package co.ivi.jus.stack.former;
 
 import java.security.NoSuchAlgorithmException;
 
