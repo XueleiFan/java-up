@@ -26,7 +26,7 @@ public class Island {
                 "    A part of the main.\n" +
                 "</div>\n" +
                 "</body>\n" +
-                "</html>";
+                "</html>\n";
         System.out.println(poetryHtml);
         System.out.println();
         String poetryTextArea = """
