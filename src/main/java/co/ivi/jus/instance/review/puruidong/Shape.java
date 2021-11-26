@@ -5,7 +5,8 @@
 
 public sealed interface Shape
         permits Shape.Circle, Shape.Rectangle, Shape.Square {
-    Shape.Rectangle rect = null;    // field variable
+    // field variable
+    Shape.Rectangle rect = null;    
 
     record Circle(double radius) implements Shape {
         // blank
@@ -36,23 +37,21 @@ public sealed interface Shape
     }
 
     static boolean isSquareA(Shape shape) {
-        if (shape instanceof Rectangle rect)
+        if (shape instanceof Rectangle rect) {
             return rect.length() == rect.width();
+        }
         return shape instanceof Square;
     }
 
     static boolean isSquareF(Shape shape) {
-        if (shape instanceof Rectangle rect)
+        if (shape instanceof Rectangle rect) {
             return rect.length() == rect.width();
+        }
         return shape instanceof Shape.Square;
     }
 
-    /// nice.
+    // nice.
     static boolean isSquare(Shape shape) {
-        return
-                /// is Square
-                shape instanceof Square ||
-                        /// is RectAngle
-                        shape instanceof Rectangle rect && rect.length == rect.width;
+        return shape instanceof Square || shape instanceof Rectangle rect && rect.length == rect.width;
     }
 }
