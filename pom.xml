@@ -36,7 +36,10 @@
                 <version>3.8.1</version>
                 <configuration>
                     <release>17</release>
-                    <compilerArgs>--enable-preview</compilerArgs>
+                    <compilerArgs>
+                        <arg>--enable-preview</arg>
+                        <arg>--add-modules=jdk.incubator.vector</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
 
