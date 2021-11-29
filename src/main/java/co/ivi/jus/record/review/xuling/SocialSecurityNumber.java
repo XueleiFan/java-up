@@ -5,6 +5,7 @@
 
 package co.ivi.jus.record.review.xuling;
 
+import java.security.MessageDigest;
 import java.util.Arrays;
 
 /**
@@ -25,8 +26,12 @@ public record SocialSecurityNumber(byte[] ssn) {
             return false;
         }
 
+        if(this.ssn == null) {
+            return false;
+        }
+
         if (o instanceof SocialSecurityNumber that) {
-            return Arrays.equals(ssn, that.ssn());
+            return MessageDigest.isEqual(ssn, that.ssn());
         }
 
         return false;
@@ -40,7 +45,7 @@ public record SocialSecurityNumber(byte[] ssn) {
     @Override
     public String toString() {
         return "SocialSecurityNumber{" +
-                "ssn=" + Arrays.toString(ssn) +
+                "ssn hash" + this.hashCode() +
                 '}';
     }
 }
