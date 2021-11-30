@@ -26,12 +26,12 @@ public class DaysInMonth {
     public static void main(String[] args) {
 
         // use the same date lib
-        LocalDate localDate = LocalDate.now();
-        Month month = localDate.getMonth();
+        LocalDate today = LocalDate.now();
+        Month month = today.getMonth();
 
         /**
         Calendar today = Calendar.getInstance();
-        // this still will throw exception
+        // this will throw exception , is a runtime error
         Month month = Month.of(today.get(Calendar.MONTH) + 1);
         boolean isLeapYear = isLeapYear(today.get(Calendar.YEAR));
          **/
@@ -51,7 +51,7 @@ public class DaysInMonth {
                     SEPTEMBER,
                     NOVEMBER -> 30;
             case FEBRUARY -> {
-                if(isLeapYear(localDate.getYear())) {
+                if(isLeapYear(today.getYear())) {
                     yield 29;
                 }
                 yield 28;
