@@ -14,7 +14,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters --enable-preview --add-modules=jdk.incubator.vector,jdk.incubator.foreign" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="java-up" options="-parameters --enable-preview --add-modules=jdk.incubator.vector,jdk.incubator.foreign" />
+      <module name="java-up" options="-parameters --enable-preview --add-modules=jdk.incubator.foreign,jdk.incubator.vector" />
     </option>
   </component>
 </project>
