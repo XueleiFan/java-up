@@ -15,8 +15,10 @@ public class UseCase {
                 UseCase.isSquare(new Shape.Circle(10)));
         System.out.println("Is a square instance a square? " +
                 UseCase.isSquare(new Shape.Square(10)));
-        System.out.println("Is a rectangle instance a square? " +
+        System.out.println("Is a special rectangle instance a square? " +
                 UseCase.isSquare(new Shape.Rectangle(10, 10)));
+        System.out.println("Is a rectangle instance a square? " +
+                UseCase.isSquare(new Shape.Rectangle(10, 20)));
     }
 
     public static boolean isSquare(Shape shape) {
