@@ -11,10 +11,10 @@ import co.ivi.jus.error.union.Returned;
 public class UseCase {
     public static void main(String[] args) {
         Returned<Digest> rt = Digest.of("SHA-256");
-        if(rt instanceof Returned.ReturnValue rv){
+        if (rt instanceof Returned.ReturnValue rv) {
             Digest d = (Digest) rv.returnValue();
             d.digest("Hello, world!".getBytes());
-        }else{
+        } else {
             System.out.println("Failed to get instance of SHA-256");
         }
     }
