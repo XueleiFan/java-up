@@ -22,14 +22,6 @@ public record SocialSecurityNumber(byte[] ssn) {
             return true;
         }
 
-        if (o == null) {
-            return false;
-        }
-
-        if(this.ssn == null) {
-            return false;
-        }
-
         if (o instanceof SocialSecurityNumber that) {
             return MessageDigest.isEqual(ssn, that.ssn());
         }
