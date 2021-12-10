@@ -2,6 +2,7 @@
  * Copyright (c) 2021, Ruidong Pu. All rights reserved.
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  */
+package co.ivi.jus.instance.review.puruidong;
 
 public sealed interface Shape
         permits Shape.Circle, Shape.Rectangle, Shape.Square {

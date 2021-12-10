@@ -1,4 +1,4 @@
-package cn.bckf.sealed;
+package co.ivi.jus.sealed.review.puruidong;
 
 public abstract sealed class Shape {
     public final String id;
