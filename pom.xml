@@ -6,7 +6,13 @@
 
     <groupId>co.ivi</groupId>
     <artifactId>java-up</artifactId>
+    <packaging>pom</packaging>
     <version>01</version>
+    <modules>
+        <module>jus.crypto</module>
+        <module>jus.crypto.impl</module>
+        <module>jus.crypto.use</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -19,6 +25,12 @@
             <artifactId>jmh-generator-annprocess</artifactId>
             <version>${jmh.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>co.ivi</groupId>
+            <artifactId>jus.crypto</artifactId>
+            <version>01</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
