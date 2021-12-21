@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-up" />
+        <module name="jus.crypto.impl" />
+        <module name="jus.crypto.use" />
+        <module name="jus.crypto" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17" />
@@ -15,6 +17,9 @@
     <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters --enable-preview --add-modules=jdk.incubator.vector,jdk.incubator.foreign" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="java-up" options="-parameters --enable-preview --add-modules=jdk.incubator.foreign,jdk.incubator.vector" />
+      <module name="jus.crypto" options="-parameters --enable-preview --add-modules=jdk.incubator.foreign,jdk.incubator.vector" />
+      <module name="jus.crypto.impl" options="-parameters --enable-preview --add-modules=jdk.incubator.foreign,jdk.incubator.vector" />
+      <module name="jus.crypto.use" options="-parameters --enable-preview --add-modules=jdk.incubator.foreign,jdk.incubator.vector" />
     </option>
   </component>
 </project>
