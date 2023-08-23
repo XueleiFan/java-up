@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2021, Xuelei Fan. All rights reserved.
+  ~ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>java-up</artifactId>
+        <groupId>co.ivi</groupId>
+        <version>01</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jus.crypto.use</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>co.ivi</groupId>
+            <artifactId>jus.crypto</artifactId>
+            <version>01</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>co.ivi</groupId>
+            <artifactId>jus.crypto.impl</artifactId>
+            <version>01</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+</project>

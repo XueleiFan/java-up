@@ -6,7 +6,13 @@
 
     <groupId>co.ivi</groupId>
     <artifactId>java-up</artifactId>
+    <packaging>pom</packaging>
     <version>01</version>
+    <modules>
+        <module>jus.crypto</module>
+        <module>jus.crypto.impl</module>
+        <module>jus.crypto.use</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -19,6 +25,12 @@
             <artifactId>jmh-generator-annprocess</artifactId>
             <version>${jmh.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>co.ivi</groupId>
+            <artifactId>jus.crypto</artifactId>
+            <version>01</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
@@ -36,7 +48,13 @@
                 <version>3.8.1</version>
                 <configuration>
                     <release>17</release>
-                    <compilerArgs>--enable-preview</compilerArgs>
+                    <parameters>true</parameters>
+                    <compilerArgs>
+                        <arg>--enable-preview</arg>
+                        <arg>--add-modules=jdk.incubator.foreign,jdk.incubator.vector</arg>
+                    </compilerArgs>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
 
@@ -45,7 +63,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <argLine>--enable-preview</argLine>
+                    <argLine>--enable-preview --add-modules=jdk.incubator.foreign,jdk.incubator.vector</argLine>
                 </configuration>
             </plugin>
         </plugins>
